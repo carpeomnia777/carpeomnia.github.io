@@ -177,9 +177,6 @@ body{
 header{
   float:center;
 }
-#dWShip{
-  height:50%
-}
 .content1{
   background-color:darkgoldenrod;
   padding:20px;
@@ -195,5 +192,8 @@ header{
   text-decoration: none;
   color:white;
   font: bold;
-  
+}
+
+#dWShip{
+  height:50%
 }
