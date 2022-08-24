@@ -174,9 +174,7 @@ body{
 .content a:hover{
   color:darkgoldenrod;
 }
-header{
-  float:center;
-}
+
 .content1{
   background-color:darkgoldenrod;
   padding:20px;
