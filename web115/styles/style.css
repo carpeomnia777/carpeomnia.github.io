@@ -194,6 +194,8 @@ body{
 #dWShip{
   height:20%;
   object-fit: contain;
+  border: darkgoldenrod groove 3px;
+  border-radius: 25px;
 }
 .mb{
   border: darkgoldenrod groove 3px;
