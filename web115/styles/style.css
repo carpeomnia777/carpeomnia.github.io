@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     box-sizing:border-box;
+    color:white;
   }
   body{
     
@@ -174,9 +175,12 @@ body{
 .content a:hover{
   color:darkgoldenrod;
 }
-
+.content span{
+  color:white;
+}
 .content1{
   background-color:darkgoldenrod;
+  color:white;
   padding:20px;
   margin: 40px 45px;
   border-radius: 25px;
@@ -186,12 +190,12 @@ body{
   position: relative;
   border: darkgoldenrod groove 5px;
 }
-.content1 a{
-  text-decoration: none;
-  color:white;
-  font: bold;
-}
 
 #dWShip{
-  height:50%
+  height:20%;
+  object-fit: contain;
+}
+.mb{
+  border: darkgoldenrod groove 3px;
+  border-radius: 25px;
 }
