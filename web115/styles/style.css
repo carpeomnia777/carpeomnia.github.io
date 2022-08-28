@@ -201,3 +201,6 @@ body{
   border: darkgoldenrod groove 3px;
   border-radius: 25px;
 }
+.brand li{
+  padding:5px;
+}
