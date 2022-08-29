@@ -192,7 +192,7 @@ body{
 }
 
 #dWShip{
-  height:20%;
+  height:52%;
   object-fit: contain;
   border: darkgoldenrod groove 3px;
   border-radius: 25px;
