@@ -189,6 +189,7 @@ body{
   text-align: center;
   position: relative;
   border: darkgoldenrod groove 5px;
+  display: inline-block;
 }
 
 #dWShip{
@@ -203,4 +204,37 @@ body{
 }
 .brand li{
   padding:5px;
+}
+.container{
+  width:100vw;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content12{
+  background-color:darkgoldenrod;
+  color:white;
+  padding:20px;
+  margin: 40px 45px;
+  border-radius: 25px;
+  width:10vw;
+  height: 10vh;
+  text-align: center;
+  position: relative;
+  border: darkgoldenrod groove 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+.box{
+  display: none;
+
+  left:65%;
+  top:40%;
+  position: absolute;
+}
+
+a:hover + .box,.box:hover{
+  display: block;
+  
+  z-index: 100;
 }
