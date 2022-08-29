@@ -111,7 +111,7 @@
     width:90vw;
     transform: translate(-50%, -50%);
     border-top: darkgoldenrod solid 2px;
-    background: #19848c33;
+    background-image: linear-gradient(#19848c, #19848c33);
  
   }
   .footer a{
