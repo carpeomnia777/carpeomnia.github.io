@@ -21,7 +21,6 @@
       rgba(25, 132, 140, 0.45)),
     url(../images/mainBg.jpg);
 }
-
 .bg {
   height: 100vh;
   width: 100vw;
@@ -118,7 +117,6 @@ nav {
   text-align: center;
   width: 100vw;
   border-top: darkgoldenrod solid 2px;
-  margin-top:2%;
 
 }
 
@@ -143,7 +141,7 @@ main {
   background-color: darkgoldenrod;
   border-radius: 25px;
   width: 95vw;
-  height: 80vh;
+  height: 75vh;
   position: fixed;
   margin-top: 1%;
   padding-top:3%;
