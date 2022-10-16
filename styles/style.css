@@ -6,6 +6,12 @@
   font-family: 'Alumni Sans Pinstripe', sans-serif;
   box-sizing:border-box;
 }
+.index{
+  padding-top:20%;
+}
+.div{
+  padding:20%;
+}
 .bg{
   height: 100vh;
   width: 100vw;

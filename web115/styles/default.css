@@ -7,7 +7,9 @@
   box-sizing: border-box;
   color: white;
 }
-
+.index{
+  padding-top:10%;
+}
 .bodybg {
 
   width: 300px;
@@ -148,6 +150,7 @@ main {
   border: darkgoldenrod groove 5px;
   text-align: center;
   justify-content: center;
+  display: inline-block;
 }
 
 .content a {
@@ -190,17 +193,17 @@ main {
 
 
 .content1 {
+  display: inline-block;
   background-color: darkgoldenrod;
   color: white;
-  padding: 20px;
+  padding: 30px;
   margin: 40px 45px;
   border-radius: 25px;
-  width: 10vw;
-  height: 5vh;
+ 
   text-align: center;
   position: relative;
   border: darkgoldenrod groove 5px;
-  display: inline-block;
+  
 }
 
 #dWShip {
