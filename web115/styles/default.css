@@ -145,6 +145,8 @@ main {
   width: 95vw;
   height: 80vh;
   position: fixed;
+  margin-top: 1%;
+  padding-top:3%;
   top: 10%;
   left: 2%;
   border: darkgoldenrod groove 5px;
