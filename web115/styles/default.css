@@ -260,14 +260,14 @@ main p{
 }
 .content13{
   display: inline-block;
-  background-color: darkgoldenrod;
+  background-color:#19848c;
   color: white;
   padding: 10px;
   margin: 40px 45px;
   border-radius: 25px;
   text-align: center;
   position: relative;
-  border: darkgoldenrod groove 5px;
+  border: #19848c groove 5px;
 }
 #link-list{
   display:flex;
