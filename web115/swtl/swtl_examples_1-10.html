@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/default.css">
+    <title>SWTL Chap 1-10 Examples</title>
+</head>
+
+<body onload="getName()">
+    <div class="bg">
+        <video class="bgVid" autoplay loop muted src="../images/video.mp4">
+        </video>
+
+        <nav>
+            <img src="../images/logoright.png" class="logo" alt="logo">
+            <ul class="nav">
+                <li><a href="https://github.com/carpeomnia777">Github</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="content" id="intro">
+        <h1 id="welcome"></h1>   
+        <h2>How can we be of service?</h1>
+            <form id="consult">
+                <input type="radio" id="unsure" name="choice" value="100" value1="I'm not sure on what I need...">
+                <label for="unsure"> I'm not sure on what I need...</label><br>
+                <input type="radio" id="webApp" name="choice" value="55" value1="I need help with building a web application!">
+                <label for="webApp"> I need help with building a web application!</label><br>
+                <input type="radio" id="hardware" name="choice" value="45" value1="I need help with my system!">
+                <label for="hardware"> I need help with my system!</label>
+            </input>
+            </form>
+                <button id="btn" style="color: white; background-color:darkgoldenrod">Confirm</button>
+                
+            
+        <script>
+            function getName(){
+                let name = prompt("Welcome, Please enter your name:", "Your name here");
+                if(name != null){
+                    document.getElementById("welcome").innerHTML =
+                    "Hello " + name + ", and Welcome to CarpeOmnia Consulting!"
+                }
+            }
+            const btn = document.querySelector('#btn');        
+        const radioButtons = document.querySelectorAll('input[name="choice"]');
+        btn.addEventListener("click", () => {
+            let selectedPrice;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedPrice = radioButton.value;
+                    
+                    break;
+                }
+            }
+            // show the output:
+            alert(`Your consultation price is : $ ${selectedPrice}`)
+        });
+        </script>
+
+    </div>
+
+
+
+    <div class="footer">
+        <footer><span>&#10022; Designed by <a href="https://carpeomnia.dev">CarpeOmnia Consulting&trade;</a>
+                &#10022;</span>
+            <br>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcarpeomnia777.github.io%2Fweb115%2Fprojects%2Ftemplate"
+                style="text-decoration:none;"><img src="../images/valid-html-blue.png" alt="html validator"></a>
+
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcarpeomnia777.github.io%2Fweb115%2Fprojects%2Ftemplate&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en"
+                style="text-decoration:none;"><img src="../images/valid-css-blue.png" alt="css validator"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
