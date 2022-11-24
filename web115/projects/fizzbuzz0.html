@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/default.css">
+    <title>CarpeOmnia Consulting Fizz buzz 0</title>
+</head>
+
+<body>
+    <div class="bg">
+        <video class="bgVid" autoplay loop muted src="../images/video.mp4">
+        </video>
+
+        <nav>
+            <img src="../images/logoright.png" class="logo" alt="logo">
+            <ul class="nav">
+                <li><a href="https://github.com/carpeomnia777">Github</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content" id="intro">
+        <h2 id="greeting">Welcome To CarpeOmnia Consulting</h2>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="first_name" name="fname" placeholder="Enter your first name" style="color: black;"><br>
+            <label for="fname">Middle Initial:</label><br>
+            <input type="text" id="middle_initial" name="fname" placeholder="Enter your middle initial"  style="color: black;"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="last_name" name="lname" placeholder="Enter your last name" style="color: black;"><br><br>
+        </input>  
+          </form> 
+          <button id="btn" style="color: white; background-color:darkgoldenrod" >Confirm</button>
+          <div id = "fizz">
+            <ol id="fizzList">
+            </ol>    
+
+          </div>
+    </div>
+
+    <script>
+            const btn = document.querySelector('#btn');
+
+            btn.addEventListener("click", () => {
+            var fName = document.getElementById("first_name").value;
+            var mInit = document.getElementById("middle_initial").value;
+            var lName = document.getElementById("last_name").value;
+            document.getElementById("greeting").innerHTML = `Welcome To CarpeOmnia Consulting, ${fName} ${mInit} ${lName}!`
+           var num = prompt(`How high would you like to count, ${fName}?`)
+        var list=document.getElementById("fizzList")
+        for (let i=1; i<= num; i++){
+            var li = document.createElement("li");
+            if(i % 2 != 0){
+                li.innerText= i + ". Expect More - The number is Odd"
+                list.appendChild(li);
+            }
+            else{
+                li.innerText = i + ". Expect More - The number is Even"
+                list.appendChild(li);
+            }
+        }
+            });
+    </script>
+
+
+    <div class="footer">
+        <footer><span>&#10022; Designed by <a href="https://carpeomnia.dev">CarpeOmnia Consulting&trade;</a>
+                &#10022;</span>
+            <br>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcarpeomnia777.github.io%2Fweb115%2Fprojects%2Ftemplate"
+                style="text-decoration:none;"><img src="../images/valid-html-blue.png" alt="html validator"></a>
+
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcarpeomnia777.github.io%2Fweb115%2Fprojects%2Ftemplate&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en"
+                style="text-decoration:none;"><img src="../images/valid-css-blue.png" alt="css validator"></a>
+        </footer>
+    </div>
+</body>
+
+</html>

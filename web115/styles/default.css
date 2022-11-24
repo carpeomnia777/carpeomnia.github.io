@@ -272,3 +272,13 @@ main p{
   display:flex;
   flex-wrap: wrap;
 }
+#fizz{
+  width:100%;
+  height: 50vh;
+  overflow-y: auto;
+  background-color: #32a0a8;
+  border-radius: 25px;
+}
+#fizz li{
+  justify-items: left;
+}
