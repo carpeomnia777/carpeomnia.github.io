@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/default.css">
+
     <title>CarpeOmnia Consulting Fizz buzz 0</title>
 </head>
 
@@ -42,31 +43,8 @@
 
           </div>
     </div>
-
-    <script>
-            const btn = document.querySelector('#btn');
-
-            btn.addEventListener("click", () => {
-            var fName = document.getElementById("first_name").value;
-            var mInit = document.getElementById("middle_initial").value;
-            var lName = document.getElementById("last_name").value;
-            document.getElementById("greeting").innerHTML = `Welcome To CarpeOmnia Consulting, ${fName} ${mInit} ${lName}!`
-           var num = prompt(`How high would you like to count, ${fName}?`)
-        var list=document.getElementById("fizzList")
-        for (let i=1; i<= num; i++){
-            var li = document.createElement("li");
-            if(i % 2 != 0){
-                li.innerText= i + ". Expect More - The number is Odd"
-                list.appendChild(li);
-            }
-            else{
-                li.innerText = i + ". Expect More - The number is Even"
-                list.appendChild(li);
-            }
-        }
-            });
+    <script src="../scripts/fizzbuzz0Script.js">
     </script>
-
 
     <div class="footer">
         <footer><span>&#10022; Designed by <a href="https://carpeomnia.dev">CarpeOmnia Consulting&trade;</a>
