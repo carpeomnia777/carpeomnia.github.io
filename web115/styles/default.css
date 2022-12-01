@@ -101,6 +101,7 @@ nav {
 
 .footer {
   position: relative;
+  top:90vh;
   bottom: 0;
   color: white;
   z-index: 10;
