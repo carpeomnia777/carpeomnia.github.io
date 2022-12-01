@@ -27,12 +27,24 @@ const btn = document.querySelector('#btn');
                     li.innerText = i + ". Clickity-Clack"
                     list.appendChild(li);
                 }
+                else if(checkDivision(i, 3) == true && checkDivision(i, 7) == true){
+                    li.innerText = i + ". Clackity-Click"
+                    list.appendChild(li);
+                }
+                else if(checkDivision(i, 5) == true && checkDivision(i, 7) == true){
+                    li.innerText = i + ". Clackity-Clack"
+                    list.appendChild(li);
+                }
                 else if(checkDivision(i, 5) == true){
                     li.innerText = i + ". Clack"
                     list.appendChild(li);
                 }
                 else if(checkDivision(i, 3)==true){
                     li.innerText = i + ". Click"
+                    list.appendChild(li);
+                }
+                else if(checkDivision(i, 7)==true){
+                    li.innerText = i + ". Thunk"
                     list.appendChild(li);
                 }
                 else{
