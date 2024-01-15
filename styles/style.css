@@ -109,4 +109,7 @@ nav{
 .footer a:hover{
   filter: drop-shadow(16px 16px 20px darkgoldenrod) grayscale(75%);
 }
+.button-place{
+  justify-content: space-evenly;
+}
 /* inner styling */
