@@ -1,0 +1,13 @@
+.footer {
+    position: relative;
+    top:95vh;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+    width: 100vw;
+  
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
