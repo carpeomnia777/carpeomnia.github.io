@@ -41,7 +41,8 @@ hr{
 
 footer{
 	text-align: center;
-	padding-top: 50px;
+	padding-top:60vh;
+	z-index: 1;
 }
 
 footer nav{
@@ -68,5 +69,22 @@ footer nav a:hover , p a:hover{
 
 footer img{
 	justify-content: center;
-	padding-top:5px;
+	
 }
+
+.content1 {
+	display: inline-block;
+	background-color: darkgoldenrod;
+	color: white;
+	padding: 30px;
+	margin: 40px 45px;
+	border-radius: 25px;
+   
+	text-align: center;
+	position: relative;
+	border: darkgoldenrod groove 5px;
+	
+  }
+  .index{
+	padding-top:10%;
+  }
