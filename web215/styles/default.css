@@ -1,13 +1,72 @@
-.footer {
-    position: relative;
-    top:95vh;
-    bottom: 0;
-    z-index: 10;
-    text-align: center;
-    width: 100vw;
-  
-  }
-  
-  .footer a {
-    text-decoration: none;
-  }
+html {
+	background-color: rgb(56, 37, 37);
+	color: white;
+}
+
+h1, h2, h3 {
+	color: darkgoldenrod;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, serif;
+	text-align: center;
+}
+
+ul {
+	list-style-type: Kannada;
+	list-style-position: outside;
+	text-align: left;
+}
+
+ul li{
+	color: darkgoldenrod;
+}
+ul span{
+	color:white;
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+
+body {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+hr{
+	border-style: groove;
+	border-color: darkgoldenrod;
+	border-width: 3px;
+}
+
+
+footer{
+	text-align: center;
+	padding-top: 50px;
+}
+
+footer nav{
+	font-size: 100%;
+	text-align: center;
+}
+
+footer nav a, p a{
+  color:white;
+  text-decoration: none;
+}
+
+footer nav a:hover , p a:hover{
+  color:darkgoldenrod;
+}
+
+
+
+.picture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer img{
+	justify-content: center;
+	padding-top:5px;
+}
