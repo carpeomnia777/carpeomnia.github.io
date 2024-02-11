@@ -38,11 +38,12 @@ hr{
 	border-width: 3px;
 }
 
-
+.indexText{
+	padding-top:30vh;
+	padding-bottom:30vh;
+}
 footer,header{
 	text-align: center;
-	padding-top:60vh;
-	z-index: 1;
 }
 
 footer,header nav{
