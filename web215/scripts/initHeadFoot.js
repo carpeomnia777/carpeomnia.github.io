@@ -3,10 +3,10 @@ function renderHeader() {
     <h1>Chris Wilson &#10022; Charismatic Wendigo &#10022; WEB215</h1>
     <nav>
     <a href="https://carpeomnia777.github.io/web215/">Home</a> |
-    <a href="projects/intro.html">Intro</a> |
-    <a href="projects/contract.html">Contract</a> |
-    <a href="projects/brand.html">Brand</a> |
-    <a href="projects/introForm.html">Intro Form</a>
+    <a href="https://carpeomnia777.github.io/web215/projects/intro.html">Intro</a> |
+    <a href="https://carpeomnia777.github.io/web215/projects/contract.html">Contract</a> |
+    <a href="https://carpeomnia777.github.io/web215/projects/brand.html">Brand</a> |
+    <a href="https://carpeomnia777.github.io/web215/projects/introForm.html">Intro Form</a>
    </nav> 
    <hr>`;
 }
