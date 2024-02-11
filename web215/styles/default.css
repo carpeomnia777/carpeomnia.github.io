@@ -39,23 +39,23 @@ hr{
 }
 
 
-footer{
+footer,header{
 	text-align: center;
 	padding-top:60vh;
 	z-index: 1;
 }
 
-footer nav{
+footer,header nav{
 	font-size: 100%;
 	text-align: center;
 }
 
-footer nav a, p a{
+footer,header nav a, p a{
   color:white;
   text-decoration: none;
 }
 
-footer nav a:hover , p a:hover{
+footer,header nav a:hover , p a:hover{
   color:darkgoldenrod;
 }
 
@@ -67,7 +67,7 @@ footer nav a:hover , p a:hover{
 	margin-right: auto;
 }
 
-footer img{
+footer,header img{
 	justify-content: center;
 	
 }

@@ -3,14 +3,14 @@ function renderHeader() {
     <h1>Chris Wilson &#10022; Charismatic Wendigo &#10022; WEB215</h1>
     <nav>
     <a href="https://carpeomnia777.github.io/web215/">Home</a> |
-    <a href="intro.html">Intro</a> |
-    <a href="contract.html">Contract</a> |
-    <a href="brand.html">Brand</a> |
-    <a href="introForm.html">Intro Form</a>
-   </nav> `;
+    <a href="projects/intro.html">Intro</a> |
+    <a href="projects/contract.html">Contract</a> |
+    <a href="projects/brand.html">Brand</a> |
+    <a href="projects/introForm.html">Intro Form</a>
+   </nav> 
+   <hr>`;
 }
 
-// Function to render footer content
 function renderFooter() {
     document.getElementById('footer').innerHTML = 
     `<hr>
@@ -27,7 +27,7 @@ function renderFooter() {
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcarpeomnia777.github.io%2Fweb215%2Fprojects%2Fbrand&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en" style="text-decoration:none;"><img src="../images/valid-css-blue.png"></a>`;
 }
 
-// Call the functions to render header and footer when the page loads
+
 window.onload = function () {
     renderHeader();
     renderFooter();
