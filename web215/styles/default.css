@@ -41,26 +41,43 @@ hr{
 .indexText{
 	padding-top:30vh;
 	padding-bottom:30vh;
+	text-align: center;
 }
-footer,header{
+footer{
 	text-align: center;
 }
 
-footer,header nav{
+footer nav{
 	font-size: 100%;
 	text-align: center;
 }
 
-footer,header nav a, p a{
+footer nav a, p a{
   color:white;
   text-decoration: none;
 }
 
-footer,header nav a:hover , p a:hover{
+footer nav a:hover , p a:hover{
   color:darkgoldenrod;
 }
 
+header{
+	text-align: center;
+}
 
+header nav{
+	font-size: 100%;
+	text-align: center;
+}
+
+header nav a, p a{
+  color:white;
+  text-decoration: none;
+}
+
+header nav a:hover , p a:hover{
+  color:darkgoldenrod;
+}
 
 .picture {
 	display: block;
@@ -68,7 +85,7 @@ footer,header nav a:hover , p a:hover{
 	margin-right: auto;
 }
 
-footer,header img{
+footer img{
 	justify-content: center;
 	
 }
