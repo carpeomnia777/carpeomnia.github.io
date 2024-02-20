@@ -2,23 +2,105 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="..\styles\default.css">
-  <title>Christopher Wilson &#9830; Brand Page &#9830; WEB215</title>
-  <script src="../scripts/initHeadFoot.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\styles\default.css">
+    <title>Christopher Wilson &#9830; Introduction Form &#9830; WEB215</title>
+    <script src="../scripts/initHeadFoot.js"></script>
+    <script src="../scripts/introForm.js"></script>
+
+
+
 </head>
 
 <body>
     <header id="header"></header>
+    <main>
+        <h2>Introduction Form</h2><br>
+        <form>
 
-  <div>
+            <div class="image-preview" id="imagePreview" style="display: none;">
+                <img src="" alt="Image Preview" class="image-preview__image">
+            </div>
 
-     
-  </div>
+            <div id="dropZone">
+                Drag and drop your
+                photo here or click to browse
+                </br>
+                <input type="file" id="fileInput" accept=".jpg, .jpeg, .png">
+            </div>
 
-  <footer id="footer"></footer>
+
+            <div class="textareaInput">
+                <label for="picOf">What is this a pic of?</label>
+                <input type="text" id="picOf" value="disappointment at the drag drop not working properly">
+            </div>
+
+            <div class="textareaInput">
+                <label for="name">Who are you? (What's your name)</label>
+                <input type="text" id="name" value="Chris Wilson">
+            </div>
+
+            <div class="textareaInput">
+                <label for="about">Tell me about yourself</label>
+                <textarea id="about"></textarea>
+            </div>
+
+            <div class="textareaInput">
+                <label for="work">What's your work life and background like?</label>
+                <textarea id="work"></textarea>
+            </div>
+
+            <div class="textareaInput">
+                <label for="academic">What's your academic background?</label>
+                <textarea id="academic"></textarea>
+            </div>
+
+            <div class="textareaInput">
+                <label for="primaryComp">What is your preferred Computer platform? (I will be judging)</label>
+                <input type="text" id="platform" value="Windows 10">
+            </div>
+
+            <div class="textareaInput">
+                <label for="courses">What courses are you taking at CPCC and why?</label>
+                <textarea id="courses"></textarea>
+            </div>
+
+            <div class="textareaInput">
+                <label for="interesting">Interesting item to remember you by:</label>
+                <input type="text" id="interestingItem" value="17 tattoos">
+            </div>
+
+            <div class="textareaInput">
+                <label for="peanutButter">What goes best with peanut butter?</label>
+                <input name="pButter" type="radio" id="Banana" value="">Banana</input>
+                <input name="pButter" type="radio" id="Chocolate" value="">Chocolate</input>
+                <input name="pButter" type="radio" id="Jelly" value="">Jelly and a baseball bat</input>
+                <input name="pButter" type="radio" id="marshmellow" value="">Marshmellow and Graham</input>
+            </div>
+
+            <div class="textareaInput">
+                <label>Pets you have or would like?</label>
+                <br>
+                <input type="checkbox" value="Dog">Dog</input>
+                <input type="checkbox" value="Cat">Cat</input>
+                <input type="checkbox" value="Fish">Fish</input>
+                <input type="checkbox" value="Reptile">Reptile</input>
+                <input type="checkbox" value="Rodent">Rodent</input>
+                <input type="checkbox" value="Rock">Rock</input>
+                <input type="checkbox" value="Peeves">Peeves</input>
+                <input type="checkbox" value="Exotic">Exotic</input>
+            </div>
+
+
+            <div class="submitButtonDiv">
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer id="footer"></footer>
 
 
 </body>

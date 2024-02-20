@@ -19,10 +19,10 @@ function renderFooter() {
     
     var validatorLink = `
         <a href="https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageUrl)}" style="text-decoration:none;">
-            <img src="../images/valid-html-blue.png">
+            <img src="https://carpeomnia777.github.io/web115/images/valid-html-blue.png">
         </a>
         <a href="https://jigsaw.w3.org/css-validator/validator?uri=${encodeURIComponent(currentPageUrl)}&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" style="text-decoration:none;">
-            <img src="../images/valid-css-blue.png">
+            <img src="https://carpeomnia777.github.io/web115/images/valid-css-blue.png">
         </a>`;
 
     document.getElementById('footer').innerHTML = 

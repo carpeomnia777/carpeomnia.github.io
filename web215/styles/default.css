@@ -1,9 +1,11 @@
 html {
-	background-color: rgb(56, 37, 37);
+	background-color: #382525;
 	color: white;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	color: darkgoldenrod;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, serif;
 	text-align: center;
@@ -15,12 +17,14 @@ ul {
 	text-align: left;
 }
 
-ul li{
+ul li {
 	color: darkgoldenrod;
 }
-ul span{
-	color:white;
+
+ul span {
+	color: white;
 }
+
 figcaption {
 	font-style: italic;
 	text-align: center;
@@ -32,51 +36,56 @@ body {
 	margin-right: 25%;
 }
 
-hr{
+hr {
 	border-style: groove;
-	border-color: darkgoldenrod;
+	border-color: #b8860b;
 	border-width: 3px;
 }
 
-.indexText{
-	padding-top:30vh;
-	padding-bottom:30vh;
-	text-align: center;
-}
-footer{
+.indexText {
+	padding-top: 30vh;
+	padding-bottom: 30vh;
 	text-align: center;
 }
 
-footer nav{
+footer {
+	text-align: center;
+}
+
+footer nav {
 	font-size: 100%;
 	text-align: center;
 }
 
-footer nav a, p a{
-  color:white;
-  text-decoration: none;
+footer nav a,
+p a {
+	color: white;
+	text-decoration: none;
 }
 
-footer nav a:hover , p a:hover{
-  color:darkgoldenrod;
+footer nav a:hover,
+p a:hover {
+	color: darkgoldenrod;
 }
 
-header{
+header {
 	text-align: center;
 }
 
-header nav{
+header nav {
 	font-size: 100%;
 	text-align: center;
 }
 
-header nav a, p a{
-  color:white;
-  text-decoration: none;
+header nav a,
+p a {
+	color: white;
+	text-decoration: none;
 }
 
-header nav a:hover , p a:hover{
-  color:darkgoldenrod;
+header nav a:hover,
+p a:hover {
+	color: darkgoldenrod;
 }
 
 .picture {
@@ -85,7 +94,122 @@ header nav a:hover , p a:hover{
 	margin-right: auto;
 }
 
-footer img{
+footer img {
 	justify-content: center;
-	
+
+}
+
+#dropZone {
+
+	border: 2px dashed rgb(184, 134, 11);
+	padding: 20px;
+	cursor: grab;
+	background-color: rgba(184, 135, 11, 0.185);
+	width: 15vw;
+	height: 5vh;
+	margin-bottom: 20px;
+}
+
+#dropZone:hover {
+	background-color: rgba(184, 135, 11, 0.336);
+}
+
+#dropZone span {
+	top: 50%;
+
+}
+
+#photoInput {
+	margin-bottom: 20px;
+}
+
+.submitButtonDiv {
+	justify-content: center;
+}
+
+#fileInput {
+	height: 100%;
+	width: 100%;
+}
+
+#imagePreview {
+	position: absolute;
+	left: 60%;
+	padding: 200px 100px;
+	border: 3px groove darkgoldenrod;
+}
+
+.textareaInput {
+	margin-bottom: 20px;
+}
+
+.submitButtonDiv{
+	display: flex;
+	justify-content: center;
+}
+
+
+.color-swatches {
+    display: flex;
+    justify-content: space-around;
+	background-color: #1d1414b4;
+	padding: 20px 10px 10px;
+	flex-wrap: wrap;
+}
+
+.color-swatches span{
+    bottom:100%;
+}
+.swatch {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px; 
+}
+
+.cross1, .cross2, .cross3, .cross4{
+    width: 80px;
+    height: 100px;
+    background-color: transparent;
+    position: relative;
+}
+
+.cross1:before,
+.cross1:after {
+    content: "";
+    position: absolute;
+    background-color: #382525; /* Set the color of the cross */
+}
+
+.cross2:before,
+.cross2:after {
+    content: "";
+    position: absolute;
+    background-color: #b8860b; /* Set the color of the cross */
+}
+
+.cross3:before,
+.cross3:after {
+    content: "";
+    position: absolute;
+    background-color: #6a5acd; /* Set the color of the cross */
+}
+
+.cross4:before,
+.cross4:after {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF; /* Set the color of the cross */
+}
+.cross1:before, .cross2:before, .cross3:before, .cross4:before {
+    width: 100%;
+    height: 20px; /* Adjust the thickness of the cross arms */
+    top: 25%;
+    left: 0;
+}
+
+.cross1:after, .cross2:after, .cross3:after, .cross4:after{
+    height: 100%;
+    width: 20px; /* Adjust the thickness of the cross arms */
+    top: 0;
+    left: 40%;
 }
