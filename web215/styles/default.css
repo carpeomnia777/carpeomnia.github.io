@@ -132,15 +132,11 @@ footer img {
 	width: 100%;
 }
 
-#imagePreview {
-	position: absolute;
-	left: 60%;
-	padding: 200px 100px;
-	border: 3px groove darkgoldenrod;
-}
 
-.textareaInput {
+.TAInput {
 	margin-bottom: 20px;
+	height: auto;
+	width:auto;
 }
 
 .submitButtonDiv{
@@ -212,4 +208,11 @@ footer img {
     width: 20px; /* Adjust the thickness of the cross arms */
     top: 0;
     left: 40%;
+}
+
+.image-preview, img#imagePreview {
+	height: 400px;
+	width: 400px;
+	float: right;
+	border: 3px groove darkgoldenrod;
 }

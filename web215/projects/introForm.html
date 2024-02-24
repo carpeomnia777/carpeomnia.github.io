@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="..\styles\default.css">
     <title>Christopher Wilson &#9830; Introduction Form &#9830; WEB215</title>
     <script src="../scripts/initHeadFoot.js"></script>
-    <script src="../scripts/introForm.js"></script>
+    <script src="../scripts/introForm.js" defer></script>
 
 
 
@@ -18,69 +18,70 @@
     <header id="header"></header>
     <main>
         <h2>Introduction Form</h2><br>
-        <form>
+        <form runat="server" style="position:relative;">
 
-            <div class="image-preview" id="imagePreview" style="display: none;">
-                <img src="" alt="Image Preview" class="image-preview__image">
-            </div>
+          
 
-            <div id="dropZone">
+            <div id="dropZone" ondrop="dropHandler(ev);" ondragover="dragOverHandler(ev);">
                 Drag and drop your
                 photo here or click to browse
                 </br>
-                <input type="file" id="fileInput" accept=".jpg, .jpeg, .png">
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+            <div class="image-preview" id="picPreview" style="display: none;">
+                <img src="#" alt="Image Preview" id="imagePreview"/>
             </div>
 
-
-            <div class="textareaInput">
+            <div class="TAInput">
                 <label for="picOf">What is this a pic of?</label>
                 <input type="text" id="picOf" value="disappointment at the drag drop not working properly">
             </div>
 
-            <div class="textareaInput">
+            <div class="TAInput">
                 <label for="name">Who are you? (What's your name)</label>
                 <input type="text" id="name" value="Chris Wilson">
             </div>
 
-            <div class="textareaInput">
-                <label for="about">Tell me about yourself</label>
-                <textarea id="about"></textarea>
+
+            <div class="TAInput">
+                <label for="aboutMe">Tell me about yourself</label>
+                <textarea id="aboutMe">Born and raised in Charlotte, NC. I attended to R.I.T. until it proved too expensive and came back home where i've started a family and work while still reaching for the dream of being a full-stack developer. I have 2 daughters and a brand new Australian Cattle dog puppy and Australian Shepherd puppy. I also enjoy being very bad at video games.</textarea>
             </div>
 
-            <div class="textareaInput">
-                <label for="work">What's your work life and background like?</label>
-                <textarea id="work"></textarea>
+            <div class="TAInput">
+                <label for="aboutWork">What's your work life like?</label>
+                <textarea id="aboutWork">I currently work as a full time software engineer at Bank of America. In the Automation adn reporting department of our real-time communications branch.</textarea>
             </div>
 
-            <div class="textareaInput">
-                <label for="academic">What's your academic background?</label>
-                <textarea id="academic"></textarea>
+            <div class="TAInput">
+                <label for="aboutAcademics">What's your academic background?</label>
+                <textarea id="aboutAcademics">I am currently pursuing a degree in Full Stack Development and, despite have a full-time job and family amongst other things, managed to maintain a 3.87 GPA. I am beyond ready for this to be done but I owe it to past me to see this through</textarea>
             </div>
 
-            <div class="textareaInput">
-                <label for="primaryComp">What is your preferred Computer platform? (I will be judging)</label>
-                <input type="text" id="platform" value="Windows 10">
+            <div class="TAInput">
+                <label for="prefPlat">What is your preferred Computer platform? (I will be judging)</label>
+                <input type="text" id="prefPlat" value="Windows 10">
             </div>
 
-            <div class="textareaInput">
+            <div class="TAInput">
                 <label for="courses">What courses are you taking at CPCC and why?</label>
-                <textarea id="courses"></textarea>
+                <textarea id="courses">WEB215- Web markup and scripting- IT was required for my degree path and that is the ONLY reason.</textarea>
             </div>
 
-            <div class="textareaInput">
-                <label for="interesting">Interesting item to remember you by:</label>
-                <input type="text" id="interestingItem" value="17 tattoos">
+            <div class="TAInput">
+                <label for="interestingBit">Interesting item to remember you by:</label>
+                <input type="text" id="interestingBit" value="17 tattoos">
             </div>
 
-            <div class="textareaInput">
-                <label for="peanutButter">What goes best with peanut butter?</label>
-                <input name="pButter" type="radio" id="Banana" value="">Banana</input>
-                <input name="pButter" type="radio" id="Chocolate" value="">Chocolate</input>
-                <input name="pButter" type="radio" id="Jelly" value="">Jelly and a baseball bat</input>
-                <input name="pButter" type="radio" id="marshmellow" value="">Marshmellow and Graham</input>
+            <div class="TAInput">
+                <label for="pButter">What goes best with peanut butter?</label>
+                <input name="pButter" type="radio" id="pButter" value="Banana">Banana</input>
+                <input name="pButter" type="radio" id="pButter" value="Chocolate">Chocolate</input>
+                <input name="pButter" type="radio" id="pButter" value="Jelly and a baseball bat">Jelly and a baseball bat</input>
+                <input name="pButter" type="radio" id="pButter" value="Marshmellow">Marshmellow</input>
             </div>
 
-            <div class="textareaInput">
+            <div class="TAInput">
                 <label>Pets you have or would like?</label>
                 <br>
                 <input type="checkbox" value="Dog">Dog</input>
@@ -94,10 +95,12 @@
             </div>
 
 
-            <div class="submitButtonDiv">
+            <div>
                 <button type="button" id="submit">Submit</button>
             </div>
         </form>
+        
+
     </main>
 
     <footer id="footer"></footer>
