@@ -66,7 +66,7 @@ submit.onclick = function submit() {
     prefPlat = getElement('prefPlat'),
     courses = getElement('courses'),
     interestingBit = getElement('interestingBit');
-    pButter = document.querySelector('input[id="pButter"]:checked').value;
+    pButter = document.querySelector('input[name="pButter"]:checked').value;
 
   if (pic) {
     let reader = new FileReader();

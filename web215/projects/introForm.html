@@ -18,18 +18,18 @@
     <header id="header"></header>
     <main>
         <h2>Introduction Form</h2><br>
-        <form runat="server" style="position:relative;">
+        <form style="position:relative;">
 
           
 
             <div id="dropZone" ondrop="dropHandler(ev);" ondragover="dragOverHandler(ev);">
                 Drag and drop your
                 photo here or click to browse
-                </br>
+                <br>
                 <input type="file" id="fileInput" accept="image/*">
             </div>
             <div class="image-preview" id="picPreview" style="display: none;">
-                <img src="#" alt="Image Preview" id="imagePreview"/>
+                <img src="#" alt="Image Preview" id="imagePreview">
             </div>
 
             <div>
@@ -75,23 +75,23 @@
 
             <div>
                 <label for="pButter">What goes best with peanut butter?</label><br>
-                <input name="pButter" type="radio" id="pButter" value="Banana">Banana</input>
-                <input name="pButter" type="radio" id="pButter" value="Chocolate">Chocolate</input>
-                <input name="pButter" type="radio" id="pButter" value="Jelly and a baseball bat" checked="checked">Jelly and a baseball bat</input>
-                <input name="pButter" type="radio" id="pButter" value="Marshmellow">Marshmellow</input>
+                <input name="pButter" type="radio"  value="Banana">Banana
+                <input name="pButter" type="radio"  value="Chocolate">Chocolate
+                <input name="pButter" type="radio"  value="Jelly and a baseball bat" checked="checked">Jelly and a baseball bat
+                <input name="pButter" type="radio" value="Marshmellow">Marshmellow
             </div><br>
 
             <div>
                 <label>Pets you have or would like?</label>
                 <br>
-                <input type="checkbox" value="Dog" checked="checked">Dog</input>
-                <input type="checkbox" value="Cat">Cat</input>
-                <input type="checkbox" value="Fish">Fish</input>
-                <input type="checkbox" value="Reptile">Reptile</input>
-                <input type="checkbox" value="Rodent" checked="checked">Rodent</input>
-                <input type="checkbox" value="Rock">Rock</input>
-                <input type="checkbox" value="Peeves" checked="checked">Peeves</input>
-                <input type="checkbox" value="Exotic">Exotic</input>
+                <input type="checkbox" value="Dog" checked="checked">Dog
+                <input type="checkbox" value="Cat">Cat
+                <input type="checkbox" value="Fish">Fish
+                <input type="checkbox" value="Reptile">Reptile
+                <input type="checkbox" value="Rodent" checked="checked">Rodent
+                <input type="checkbox" value="Rock">Rock
+                <input type="checkbox" value="Peeves" checked="checked">Peeves
+                <input type="checkbox" value="Exotic">Exotic
             </div><br>
 
 
