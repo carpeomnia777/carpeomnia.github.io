@@ -76,36 +76,34 @@ submit.onclick = function submit() {
 
 
       document.querySelector('main').innerHTML = `
-          <div class="imageBox">
+          <div class="imgCont">
             <img class="image" src="${picChoice}" alt="photo" style="width: 15vh; height:auto; padding-top: 3vh;"><br>
             <div class="caption">
               <i>${caption}</i><br>
             </div><br>
           </div>
-  
+
           <div>
-          <span> Hello, ${name}</span>
-          <br>
-          <br>
-          <span><b>Personal background: </b>${aboutMe}</span><br><br>
-          <span><b>Professional background: </b> ${aboutWork}</span><br><br>
-          <span><b>Academic background: </b> ${aboutAcademics}</span><br><br>
-          <span><b>Primary Computer Platform: </b>${prefPlat}</span><br><br>
-          <span><b>Courses I'm Taking & Why:</b></span><br><br>
+          <ul>
+            <li><b>Personal background: </b>${aboutMe}</li>
+            <li><b>Professional background: </b> ${aboutWork}</li>
+            <li><b>Academic background: </b> ${aboutAcademics}</li>
+            <li><b>Primary Computer Platform: </b>$${prefPlat}</li>
+            <li><b>Courses I'm Taking & Why:</b>
     
             <ul>${(() => {
-          let coursesList = courses.split('\n').map(course => course.trim()).filter(Boolean);
-          let content = '';
-          for (let course of coursesList) {
-            let split = course.split(/\s+-\s+/);
-            content += `<li><strong>${split[0]}</strong> - ${split[1]}</li>`;
-          }
-          return content;
-        })()}</ul><br>
-        <span><b>Funny/Interesting Item about Yourself: </b>${interestingBit}</span><br><br>
+              let coursesList = courses.split('\n').map(course => course.trim()).filter(Boolean);
+              let content = '';
+              for (let course of coursesList) {
+                let split = course.split(/\s+-\s+/);
+                content += `<li><strong>${split[0]}</strong> - ${split[1]}</li>`;
+              }
+              return content;
+            })()}</ul>
+            <li><b>Funny/Interesting Item about Yourself: </b>${interestingBit}</li>
+            <li><b>It appears you think peanut butter goes best with:</b> ${pButter}</li>
     
-        
-          <span><b>It appears you think peanut butter goes best with:</b> ${pButter}</span>
+          </ul>
         </div>
         `;
     };

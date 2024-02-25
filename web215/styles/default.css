@@ -135,8 +135,15 @@ footer img {
 
 .TAInput {
 	margin-bottom: 20px;
-	height: auto;
-	width:auto;
+	min-height: 50px;
+	height:auto;
+	width: 400px;
+}
+
+.TInput {
+	margin-bottom: 20px;
+	height: 20px;
+	width: 400px;
 }
 
 .submitButtonDiv{
