@@ -1,13 +1,14 @@
 html {
 	background-color: #382525;
 	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, serif;
 }
 
 h1,
 h2,
 h3 {
 	color: darkgoldenrod;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, serif;
+	
 	text-align: center;
 }
 
@@ -43,8 +44,8 @@ hr {
 }
 
 .indexText {
-	padding-top: 30vh;
-	padding-bottom: 30vh;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
@@ -88,6 +89,10 @@ p a:hover {
 	color: darkgoldenrod;
 }
 
+header hr{
+	margin-bottom: 10px;
+}
+
 .picture {
 	display: block;
 	margin-left: auto;
@@ -96,7 +101,11 @@ p a:hover {
 
 footer img {
 	justify-content: center;
+	margin-top: 10px;
+}
 
+footer hr{
+	margin-top: 10px;
 }
 
 #dropZone {

@@ -34,7 +34,7 @@ function renderFooter() {
       <a href="https://www.freecodecamp.org/fccb5bf1aed-e1a7-4698-98e4-c75adb890990">freeCodeCamp</a> |
       <a href="https://www.codecademy.com/profiles/CarpeOmnia777">Codecademy</a> |
       <a href="https://jsfiddle.net/user/carpeomnia777/fiddles/">JSFiddle</a> |
-      <a href="https://www.linkedin.com/learning/?u=76141674/">LinkedIn Learning</a> |
+      <a href="https://www.linkedin.com/learning/?u=76141674/">LinkedIn Learning</a>
      </nav> 
      ${validatorLink}`;
 }
